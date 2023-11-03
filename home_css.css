@@ -1,0 +1,243 @@
+body{
+	/*background-color:#dfe3ee;  */
+	overflow-x:auto;
+	
+}
+/*class for large screen menu items */
+
+#top-bar{
+	width:100%;position:fixed;top:0;padding-top:5px;padding-bottom:5px;
+	height:60px;z-index:2;
+	background-color:#3b3530; display:flex;align-items:center;
+}
+#company{font-size:14px;color:#ffffff;font-family: "Audiowide", sans-serif;}
+#logo{
+	width:220px;height:50px;border:solid 1px #3b3530;
+	margin-left:10px;padding-left:5px;padding-top:2px;cursor:pointer;
+}
+#hello{
+	width:210px;height:50px;border:solid 1px #3b3530;cursor:pointer;
+	margin-left:10px;display:flex;
+}
+#display-user{
+	font-size:15px;color:#ffffff;font-family: Arial;font-weight:bold;margin:auto;
+	}
+/*searchbox css */
+#searchbox{
+	height:40px; width:500px;border: solid 1px #3b3530; border-radius:5px;background-color:#ffffff;display:flex;margin-left:10px;
+	}
+#searchoptions{
+	height:100%;width:15%;border-radius:5px 0px 0px 5px;background-color:#eee0e5;display:flex;cursor:pointer;
+}
+#searchlabel{
+	font-family:Arial;font-size:12px;margin:auto;font-weight:bold;
+}
+#imgdownarrow{
+	width:10px;height:10px;display:block;margin:auto;
+}
+#searchtext{
+		height:90%;width:70%;margin-top:2px;
+}
+#textenter{
+	width:100%;height:100%;background-color:#ffffff;border:none;font-size:12px;
+}
+#searchbutton{
+	height:100%;width:15%;border-radius:0px 5px 5px 0px;background-color:#fff84c;float:right;display: flex;
+  justify-content: center;cursor:pointer;
+	
+}
+#imgsearch{
+	height:25px;width:25px;display:block;margin:auto;
+}
+/*sign in box */
+.signup-popup{
+	position:absolute;top:120px;
+	margin-left:auto;margin-right:auto;
+	z-index:3;
+	left:400px;
+	border:1px solid #f1f1f1;
+	border-radius:5px;
+	height:400px;width:600px;
+	margin-top:20px;
+	display:flex;
+}
+#account{
+	width:170px;height:50px;border:solid 1px #3b3530;cursor:pointer;
+	margin-left:10px;display:flex;color:#ffffff;font-weight:bold;padding:auto;
+}
+#accounttext{
+font-size:14px;color:#ffffff;font-family: Arial;font-weight:bold;margin:auto;	
+}
+#imgdownarrowgray{
+	width:10px;height:10px;display:block;margin:auto;
+}
+/*orders box*/
+#orders{
+	width:110px;height:50px;border:solid 1px #3b3530;cursor:pointer;
+	margin-left:10px;color:#ffffff;padding:auto;padding-left:5px;
+}
+#returns{
+font-size:12px;color:#ffffff;font-family: Arial;font-weight:bold;margin:auto;	
+}
+#orders-text{
+font-size:14px;color:#ffffff;font-family: Arial;font-weight:bold;margin:auto;display:flex;	
+}
+/*cart box*/
+#cart{
+	width:110px;height:50px;border:solid 1px #3b3530;cursor:pointer;
+	margin-left:10px;color:#ffffff;padding:auto;padding-left:5px;margin-right:5px;
+}
+#cartimage{
+height:40px;width:80px;	
+}
+#items{
+height:10px;width:80px;text-align:center;margin-bottom:5px;	
+}
+#imgcart{
+	width:40px;height:30px;display:block;margin:auto;
+}
+#cart-contents{
+font-size:14px;color:#ffff33;font-family: Arial;font-weight:bold;margin:auto;	/*to show number of items in the cart*/
+}
+/*navigation bar*/
+.lmenu-items{
+	width:140px;height:40px;margin-top:10px;font-family:Constantia;border: solid 1px #36454f;
+	margin-left:10px;padding-left:5px;padding-top:5px;cursor:pointer;text-align:center;font-weight:bold;
+}
+.secondlevel-menu{
+	position:absolute;top:120px;
+	z-index:3;
+	border:1px solid #f1f1f1;
+	border-radius:5px;
+	width:200px;
+	background-color:#f1f1f1;margin-top:20px;
+}
+/*menuitems*/
+.submenus-table tr td{
+	border-collapse:collapse;width:100%;padding-left:10px;
+	color:#525266;cursor:pointer;;font-size:14px;
+}
+.submenus-table tr :hover{
+	background-color:#3295ed;
+	color:#ffffff;
+}
+li{color:#000000;}
+#navbar{
+	width:100%;padding-top:5px;padding-bottom:5px;color:#ffffff;
+	height:60px;position:relative;top:60px;
+	background-color:#36454f; display:flex;align-items:center;
+}
+#hidden-menu{
+	height:20px;width:20px;margin-left:20px;margin-top:auto;margin-bottom:auto;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+.button2{
+	width:80px;height:30px;background-image: linear-gradient(#ffcc00, #ffffff);font-size:12px;border:none;cursor:pointer;
+}
+.button2 :hover{
+	background-image: linear-gradient(#ffffff,#ffcc00);
+	
+}
+.button1{
+	width:80px;height:30px;font-size:12px;border:none;cursor:pointer; background-color:#fff68f;
+}
+.button1:hover{
+	background-color:#ffcc00;transition: 0.5s;
+}
+.guest-login-img{
+	height:30px;width:30px;cursor:pointer;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+	#navbar{
+	width:100%;padding-bottom:5px;color:#ffffff;
+	height:80px;position:relative;top:60px;
+	background-color:#36454f; display:flex;align-items:center;
+}
+  #top-bar{
+	width:100%;position:fixed;top:0;padding-top:5px;padding-bottom:5px;
+	height:150px;z-index:2;
+	background-color:#3b3530; display:flex;align-items:center;
+}
+#footer{overflow-x:auto;}
+#company{display:none;}
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 900px){
+	#navbar{
+	width:100%;padding-bottom:5px;color:#ffffff;
+	height:80px;position:relative;top:60px;
+	background-color:#36454f; display:flex;align-items:center;
+}
+}
+/*........................................*/
+
+#main
+{
+	width:500px;
+	height:300px;
+	display:relative;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:50px;
+	padding-left:20px;
+	padding-top:10px;
+	
+}
+table tr{
+height:35px;	
+
+}
+input
+{
+	height:20px;
+	border-radius:5px;
+	font-size:18px;
+	background-color:#dfe3ee;
+}
+#submit,#submit1{
+		height:35px;
+		width:100px;
+		font-size:10;
+		font-weight:bold;
+		background-color:#3b5998;
+		cursor:pointer;
+		border:none;
+}
+#ad{
+	margin-left:auto;
+	margin-right:auto;
+	width:400px;
+	height:180px;
+	border:solid 2px #339900;
+	border-radius:10px;
+	background-color:#339900;
+	position:relative;
+	
+	
+}
+#inner-top{
+	height:100px;
+	width:100%;
+	position:relative;
+	font-family:Comic Sans MS;font-size:18px;font-weight:bold;color:white;
+		
+}
+#inner-bottom{
+	height:80px;
+	width:100%;
+	background-color:#ffffff;
+	border-radius:0px 0px 10px 10px;
+	
+	position:relative;
+}
+
+
